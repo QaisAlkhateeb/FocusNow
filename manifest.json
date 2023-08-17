@@ -1,18 +1,23 @@
 {
-    "manifest_version": 3,
-    "name": "FocusNow",
-    "version": "1.0",
-    "description": "Block distracting websites",
-    "permissions": ["webNavigation", "storage"],
-    "action": {
-      "default_popup": "popup.html"
-    },
-    "options_page": "options.html",
-    "background": {
-      "service_worker": "background.js"
-    },
-    "content_security_policy": {
-      "extension_pages": "script-src 'self'; object-src 'self';"
-    }
+  "manifest_version": 3,
+  "name": "FocusNow",
+  "version": "1.0",
+  "description": "Block distracting websites",
+  "icons": {
+    "128": "icons/128.png"
+  },
+  "permissions": [
+    "webNavigation",
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "options_page": "options/options.html",
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';"
   }
-  
+}

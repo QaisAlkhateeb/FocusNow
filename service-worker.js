@@ -5,7 +5,7 @@ chrome.webNavigation.onBeforeNavigate.addListener((details) => {
             let whitelistedPatterns = result.whitelistedWebsites || [];
 
             if (isBlocked(details.url, blockedPatterns, whitelistedPatterns)) {
-                chrome.tabs.update(details.tabId, {url: chrome.runtime.getURL('blocked.html')});
+                chrome.tabs.update(details.tabId, {url: chrome.runtime.getURL('pages/blocked/blocked.html')});
             }
         }
     });
