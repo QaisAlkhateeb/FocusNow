@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website Blocker Options</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Website Blocker Options</h1>
+    
+    <label>
+        <input type="checkbox" id="toggleExtension">
+        Enable Website Blocker
+    </label>
+    
+    <h2>Blocked Patterns</h2>
+    <input type="text" id="blockedPattern" placeholder="Enter pattern or regex to block">
+    <button id="addBlocked">Add</button>
+    <ul id="blockList"></ul>
+    
+    <h2>Whitelisted Patterns</h2>
+    <input type="text" id="whitelistedPattern" placeholder="Enter pattern or regex to whitelist">
+    <button id="addWhitelisted">Add</button>
+    <ul id="whitelist"></ul>
+    
+    <script src="options.js"></script>
+</body>
+</html>
